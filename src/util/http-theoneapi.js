@@ -18,6 +18,7 @@ const processAPIError = (err) => {
 }
 
 const callTheOneAPI = (authToken, url) => {
+    console.log(`URL: ${url}`);
     return new Promise(function (resolve, reject) {
         axiosInstance.get(url, {
             headers: {
