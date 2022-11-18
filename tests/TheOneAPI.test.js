@@ -1,4 +1,4 @@
-const TheOneAPI = require('../src/index');
+const TheOneAPI = require('../src/TheOneAPI');
 
 const testAuth = 'ulfE1b1Kf5m4Rs6Mr3Tu';
 
