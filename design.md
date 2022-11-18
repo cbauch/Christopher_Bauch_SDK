@@ -25,3 +25,9 @@
 5. __Used np to handle publishing to npm__
 
     - To ease the versioning, tagging, and publishing process, I am using np to make sure steps are not forgotten when releasing new code to the npm package.
+
+## Future Considerations
+
+1. The tests contain a hard coded api key.  This should be abstracted out and defined as an environment variable.
+2. There is no definition of what not to package for npm.  All files are being sent, which should be stripped down to just what is needed for production.
+3. The query string generator could probably be wrapping a library that handles query strings in a much more flexible manner than the hand-coded script.
