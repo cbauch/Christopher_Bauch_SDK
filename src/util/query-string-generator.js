@@ -68,6 +68,7 @@ const createQueryString = (filters, pagination, sorting) => {
  */
 const createFilterString = (filterAttribute = '_id', filterOperation = FilterOperation.Exists, filterValue) => {
     var filter = '';
+    filterAttribute = encodeURIComponent(filterAttribute);
     switch (filterOperation) {
         case FilterOperation.MatchIncludeOrRegex:
         case FilterOperation.NegateMatchOrExclude:
@@ -75,7 +76,7 @@ const createFilterString = (filterAttribute = '_id', filterOperation = FilterOpe
         case FilterOperation.LessThanOrEqual:
         case FilterOperation.GreaterThan:
         case FilterOperation.GreaterThanOrEqual:
-            filter = filterAttribute + filterOperation + filterValue;
+            filter = filterAttribute + filterOperation + encodeURIComponent(filterValue);
             break;
         case FilterOperation.Exists:
             filter = filterAttribute;
@@ -117,7 +118,7 @@ const createPaginationStringWithOffset = (limit = 10, offset = 0) => {
  * @returns 
  */
 const createSortingString = (attribute = 'name', sortDirection = SortDirection.Asc) => {
-    return `sort=${attribute}:${sortDirection}`;
+    return `sort=${encodeURIComponent(attribute)}:${sortDirection}`;
 }
 
 module.exports = { createQueryString, createFilterString, createPaginationStringWithPage, createPaginationStringWithOffset, createSortingString, FilterOperation, SortDirection };

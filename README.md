@@ -32,15 +32,28 @@ const TheOneAPI = require('@cbauch/christopher_bauch_sdk');
 3. Call functions and use helpers:
 ```js
 const authToken = 'Your_API_Token'
-TheOneAPI.findBooks(
+TheOneAPI.searchBooks(
     authToken, 
     TheOneAPI.createFilter("name", TheOneAPI.FilterOperation.MatchIncludeOrRegex, "The Fellowship Of The Ring")
-);
+).then(res => {
+    console.log(res);
+}).catch(err => {
+    console.log(err);
+});
 ```
 
 ## Tests
 
-Jest must be installed to run the tests.  They can be run with the command:
+1. Clone the git repo
 ```sh
-npm test --prefix path/to/Christopher_Bauch_SDK
+git clone https://github.com/cbauch/Christopher_Bauch_SDK.git
+cd Christopher_Bauch_SDK
+```
+2. Jest other dependencies must be installed to run the tests.
+```sh
+npm update
+```
+3. The tests can be run with the command:
+```sh
+npm test
 ```
