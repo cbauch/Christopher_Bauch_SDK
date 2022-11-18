@@ -1,0 +1,19 @@
+{
+  "name": "@cbauch/christopher_bauch_sdk",
+  "version": "1.0.0",
+  "description": "An SDK for The Lord of the Rings API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specification\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cbauch/Christopher_Bauch_SDK.git"
+  },
+  "author": "Christopher Bauch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cbauch/Christopher_Bauch_SDK/issues"
+  },
+  "homepage": "https://github.com/cbauch/Christopher_Bauch_SDK#readme"
+}
