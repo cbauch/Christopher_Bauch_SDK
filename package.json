@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/cbauch/Christopher_Bauch_SDK/issues"
   },
-  "homepage": "https://github.com/cbauch/Christopher_Bauch_SDK#readme"
+  "homepage": "https://github.com/cbauch/Christopher_Bauch_SDK#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
