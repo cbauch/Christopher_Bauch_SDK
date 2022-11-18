@@ -4,7 +4,7 @@
   "description": "An SDK for The Lord of the Rings API.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specification\" && exit 1"
+    "test": "echo \"No test specified yet.\""
   },
   "repository": {
     "type": "git",
