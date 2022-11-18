@@ -23,18 +23,18 @@ Christopher_Bauch_SDK provides a single class "TheOneAPI".  As the name implies,
 ## Installation
 1. Install using npm:
 ```sh
-npm install @cbauch/Christopher_Bauch_SDK
+npm install @cbauch/christopher_bauch_sdk
 ```
 2. Import TheOneAPI object into your code:
 ```js
-const TheOneAPI = require('Christopher_Bauch_SDK');
+const TheOneAPI = require('@cbauch/christopher_bauch_sdk');
 ```
 3. Call functions and use helpers:
 ```js
 const authToken = 'Your_API_Token'
 TheOneAPI.findBooks(
     authToken, 
-    TheOneAPI.createFilter(name, TheOneAPI.FilterOperation.MatchIncludeOrRegex, "The Fellowship Of The Ring")
+    TheOneAPI.createFilter("name", TheOneAPI.FilterOperation.MatchIncludeOrRegex, "The Fellowship Of The Ring")
 );
 ```
 
